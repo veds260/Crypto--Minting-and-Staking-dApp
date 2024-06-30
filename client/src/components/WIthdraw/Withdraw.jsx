@@ -27,19 +27,8 @@ const WithdrawStakeAmount= ()=>{
                 success: 'Transaction successful 👌',
                 error: 'Transaction failed 🤯'
                 });
-            // setTransactionStatus("Transaction is pending...");
-            // const receipt= await transaction.wait();
-            // if (receipt.status===1){
-            //     setTransactionStatus("Transaction is Successful");
-            //     setIsReload(!isReload);
-            //     setTimeout(()=>{
-            //         setTransactionStatus("")
-            //     },5000)
                 withdrawStakeAmountRef.current.value=""
                 setIsReload(!isReload);
-            // }else{
-            //     setTransactionStatus("Transaction Failed");
-            // }
             
         } catch (error) {
             toast.error("Staking Failed");

@@ -33,12 +33,7 @@ const StakeAmount =()=>{
     });
     stakeAmountRef.current.value = "";
     setIsReload(!isReload);
-    // if (receipt.status === 1) {
-    //     setIsReload(!isReload);
-    //     stakeAmountRef.current.value = "";
-    //   } else {
-    //       toast.error("Transaction failed. Please try again.")
-    //   }
+    
     } catch (error) {
       toast.error("Staking Failed");
       console.error(error.message)

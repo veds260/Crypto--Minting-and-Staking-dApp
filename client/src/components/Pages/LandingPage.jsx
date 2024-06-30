@@ -10,7 +10,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     if (selectedAccount) {
-      // Wallet is already connected, navigate to the main page or mint page accordingly
+      console.log("Wallet is already connected!");
     }
   }, [selectedAccount]);
 
