@@ -44,6 +44,7 @@ const MintGokuToken = () => {
       <Wallet>
       <Navigation/>
         <h1 className='m-4'>Mint GOKU Tokens</h1>
+        <span>Note: You will receive 1 Goku token per mint. You can see it in your wallet by importing the token with address: 0x49af01F6bb1C1f3853cF46e5093084121b3c4568</span>
         <button onClick={handleMint} className="bg-blue-950 text-white p-2" disabled={loading}>
           {loading ? 'Minting...' : 'Mint Tokens'}
         </button>
