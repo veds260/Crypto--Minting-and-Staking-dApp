@@ -12,7 +12,7 @@ const TotalStakedAmount= ()=>{
     useEffect(()=>{
         const fetchTotalStakedBalance= async()=>{
             try {
-                const amountTotalStakedWei= await stakingContract.totalStakedTokens;
+                const amountTotalStakedWei= await stakingContract.totalStakedTokens();
                 const amountTotalStakedEth= ethers.formatUnits(amountTotalStakedWei.toString(), 18);
                 setTotalStakedAmount(amountTotalStakedEth);
             } catch (error) {
