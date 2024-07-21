@@ -23,7 +23,7 @@ const StakedAmount= ()=>{
         stakingContract && fetchStakedBalance()
     }, [stakingContract, selectedAccount, isReload])
     return(
-        <div className="w-[500px] text-black bg-white flex justify-between items-center py-1.5 px-7 rounded-t-lg">
+        <div className="w-[500px] text-black bg-white flex justify-between items-center py-1.5 px-7">
             <p className="font-bold">Staked Amount: </p>
             <span>{stakedAmount} GOKU tokens </span>
         </div>
