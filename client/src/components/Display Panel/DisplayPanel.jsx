@@ -1,11 +1,12 @@
 import EarnedReward from "./EarnedReward";
 import StakedAmount from "./StakedAmount";
 import RewardRate from "./RewardRate";
-
+import TotalStakedAmount from "./TotalStakedTokens";
 const DisplayPanel= ()=>{
 
     return(
         <div className="flex flex-col justify-center items-center rounded-[24px] pt-[18px] py-2">
+            <TotalStakedAmount/>
             <StakedAmount/>
             <RewardRate/>
             <EarnedReward/>
