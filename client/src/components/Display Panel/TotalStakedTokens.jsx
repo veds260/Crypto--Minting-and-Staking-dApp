@@ -12,11 +12,11 @@ const TotalStakedAmount= ()=>{
     useEffect(()=>{
         const fetchTotalStakedBalance= async()=>{
             try {
-                const amountTotalStakedWei= await stakingContract.totalStakedAmount;
+                const amountTotalStakedWei= await stakingContract.totalStakedTokens;
                 const amountTotalStakedEth= ethers.formatUnits(amountTotalStakedWei.toString(), 18);
                 setTotalStakedAmount(amountTotalStakedEth);
             } catch (error) {
-                toast.error("Error fetching staked amount");
+                toast.error("Error fetching Total staked amount");
                 console.log(error.message);
             }
         }
